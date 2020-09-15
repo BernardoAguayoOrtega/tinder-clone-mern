@@ -5,9 +5,9 @@ import { render } from 'react-dom';
 //import global styles
 import './GlobalStyles.css';
 //import App component
-import { App } from './App';
+import { App } from './components/App';
 //import service worker
-import * as serviceWorker from './serviceWorker';
+import * as serviceWorker from './utils/serviceWorker';
 
 render(
 	<React.StrictMode>
