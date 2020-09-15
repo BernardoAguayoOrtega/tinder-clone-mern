@@ -29,6 +29,6 @@
 
 ### Components
 
-- header :speaking_head_in_silhouette:
+- header :male-astronaut: 
 - logo :low_brightness:
 - app :iphone:
