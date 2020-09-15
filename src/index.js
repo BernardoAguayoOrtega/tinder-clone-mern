@@ -2,7 +2,7 @@
 import React from 'react';
 //import render method from react dom
 import { render } from 'react-dom';
-//import global styles
+//import global stylesj
 import './GlobalStyles.css';
 //import App component
 import { App } from './components/App';

@@ -1,7 +1,6 @@
 # Tinder Clone with mern stack
 
-> MERN stack is a web development framework. It consists of MongoDB, ExpressJS, ReactJS, and NodeJS as its working components.
-> [color=#17b23b]
+> MERN stack is a web development framework. It consists of MongoDB, ExpressJS, ReactJS, and NodeJS as its working components.s
 
 ## Host
 
