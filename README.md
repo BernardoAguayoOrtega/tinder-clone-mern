@@ -14,6 +14,7 @@
 - react
 - react-dom
 - react-scripts
+- react-tinder-card
 
 ## How to start?
 
@@ -28,6 +29,6 @@
 
 ### Components
 
-- header
-- logo
-- app
+- header :speaking_head_in_silhouette:
+- logo :low_brightness:
+- app :iphone:
