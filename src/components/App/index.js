@@ -7,8 +7,6 @@ import { Header } from '../Header';
 export const App = () => {
 	return (
 		<>
-			<h1>I'm the app</h1>
-			<p>Component</p>
 			{/*Header*/}
 			<Header />
 			{/*Tinder cards*/}
