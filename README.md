@@ -29,6 +29,10 @@
 
 ### Components
 
+<<<<<<< HEAD
 - header :heart_eyes:
+=======
+- header :male-astronaut: 
+>>>>>>> 85389b8d46d4065237d94597757deca22a0936db
 - logo :low_brightness:
 - app :iphone:
