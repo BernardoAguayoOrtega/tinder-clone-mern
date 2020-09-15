@@ -30,19 +30,28 @@ export const Cards = () => {
 	};
 
 	return (
-		<div className='cards'>
-			<div className='cards__cardContainer'>
-				{people.map((person) => (
-					<TinderCard
-						className='swipe'
-						key={person.name}
-						preventSwipe={['upp', 'down']}
-						onSwipe={(dir) => swiped(dir, person.name)}
-						onCardLeftScreen={() => outOfFrame(person.name)}>
-						{person.name}
-					</TinderCard>
-				))}
+		<>
+			{/*All the cards*/}
+			<div className='cards'>
+				<div className='cards__cardContainer'>
+					{people.map((person) => (
+						<TinderCard
+							className='swipe'
+							key={person.name}
+							preventSwipe={['upp', 'down']}
+							onSwipe={(dir) => swiped(dir, person.name)}
+							onCardLeftScreen={() => outOfFrame(person.name)}>
+							{/*Background image*/}
+							<div
+								className='card'
+								style={{ backgroundImage: `url(${person.url})` }}>
+								{/*Name*/}
+								<h3>{person.name}</h3>
+							</div>
+						</TinderCard>
+					))}
+				</div>
 			</div>
-		</div>
+		</>
 	);
 };
