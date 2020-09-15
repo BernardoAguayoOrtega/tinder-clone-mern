@@ -14,4 +14,20 @@
 - react
 - react-dom
 - react-scripts
-- styled-components
+
+## How to start?
+
+1. Clone this repository :paperclip:
+2. install all the dependencies: :arrow_double_down:
+
+```js
+  npm i
+```
+
+3. that's it :rocket:
+
+### Components
+
+- header
+- logo
+- app

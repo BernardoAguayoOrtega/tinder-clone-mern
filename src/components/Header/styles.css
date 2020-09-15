@@ -1,0 +1,11 @@
+/*header*/
+.header {
+	display: flex;
+	align-items: center;
+}
+
+/*Header logo*/
+.header__logo {
+	object-fit: contain;
+	height: 50px;
+}
