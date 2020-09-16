@@ -1,3 +1,15 @@
+#node modules
+node_modules
+
+#.gitignore
+.gitignore
+
+#dist
+dist
+
+#build
+build
+
 # Logs
 logs
 *.log
