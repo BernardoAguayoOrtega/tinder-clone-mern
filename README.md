@@ -41,5 +41,5 @@
     - components
     - utils
 - backend :100:
-  -server.js
-  -dbModel.js
+  - server.js
+  - dbModel.js
