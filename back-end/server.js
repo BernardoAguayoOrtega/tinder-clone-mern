@@ -2,16 +2,20 @@
 import express from 'express';
 //import mongoose
 import mongoose from 'mongoose';
+//import cors
+import Cors from 'cors';
 //import cards
 import Cards from './dbCards.js';
 
 //app config
 const app = express();
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 8001;
 //connection to db
 const connection_url = `mongodb+srv://admin:fsH52pD6jayhJkvs@cluster0.rat6n.gcp.mongodb.net/tinder-db?retryWrites=true&w=majority`;
 
 //middlewares
+app.use(express.json());
+app.use(Cors());
 
 //db config
 mongoose.connect(connection_url, {
@@ -23,7 +27,7 @@ mongoose.connect(connection_url, {
 // api endpoints
 app.get('/', (req, res) => res.status(200).send('hello word!'));
 
-app.post('/tinder/card', (req, res) => {
+app.post('/tinder/cards', (req, res) => {
 	const dbCard = req.body;
 
 	Cards.create(dbCard, (err, data) => {
@@ -35,7 +39,7 @@ app.post('/tinder/card', (req, res) => {
 	});
 });
 
-app.get('/tinder/card', (req, res) => {
+app.get('/tinder/cards', (req, res) => {
 	Cards.find((err, data) => {
 		if (err) {
 			res.status(500).send(err);
@@ -50,5 +54,3 @@ app.listen(port, () => console.log(`listening on localhost: ${port}`));
 
 //password
 //fsH52pD6jayhJkvs;
-
-//189.199.125.10
