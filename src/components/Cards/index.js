@@ -16,7 +16,7 @@ export const Cards = () => {
 		{
 			name: 'Lucas',
 			url:
-				'https://www.guidedogs.org/wp-content/uploads/2019/11/website-donate-mobile.jpg',
+				'https://image.cnbcfm.com/api/v1/image/105992231-1561667465295gettyimages-521697453.jpeg?v=1561667497&w=1600&h=900',
 		},
 	]);
 
