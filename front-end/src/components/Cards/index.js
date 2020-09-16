@@ -14,9 +14,7 @@ export const Cards = () => {
 	//use effect
 	useEffect(() => {
 		async function fetchData() {
-			const req = await instance
-				.get(getCards)
-				.then((res) => setPeople(res.data));
+			await instance.get(getCards).then((res) => setPeople(res.data));
 		}
 
 		fetchData();
