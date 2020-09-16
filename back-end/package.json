@@ -1,6 +1,6 @@
 {
 	"name": "back-end",
-	"version": "1.0.0",
+	"version": "1.0",
 	"description": "back-end for tinder clone with mern stack",
 	"main": "server.js",
 	"type": "module",
