@@ -7,12 +7,28 @@ import StarRateIcon from '@material-ui/icons/StarRate';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import FLashOnIcon from '@material-ui/icons/FlashOn';
 import IconButton from '@material-ui/core/IconButton';
+//import the styles
+import './styles.css';
 
 //create swipe buttons component and export it
 export const SwipeButtons = () => {
 	return (
 		<div className='swipe-buttons'>
-			<h1>swipe buttons</h1>
+			<IconButton className='swipe-buttons__repeat'>
+				<ReplayIcon fontSize='large' />
+			</IconButton>
+			<IconButton className='swipe-buttons__left'>
+				<CloseIcon fontSize='large' />
+			</IconButton>
+			<IconButton className='swipe-buttons__star'>
+				<StarRateIcon fontSize='large' />
+			</IconButton>
+			<IconButton className='swipe-buttons__right'>
+				<FavoriteIcon fontSize='large' />
+			</IconButton>
+			<IconButton className='swipe-buttons__lightning'>
+				<FLashOnIcon fontSize='large' />
+			</IconButton>
 		</div>
 	);
 };

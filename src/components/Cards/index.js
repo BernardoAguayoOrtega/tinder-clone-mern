@@ -9,14 +9,14 @@ import './styles.css';
 export const Cards = () => {
 	const [people, setPeople] = useState([
 		{
-			name: 'Hercules',
-			url:
-				'https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/dog_cool_summer_slideshow/1800x1200_dog_cool_summer_other.jpg?resize=750px:*',
-		},
-		{
 			name: 'Lucas',
 			url:
 				'https://image.cnbcfm.com/api/v1/image/105992231-1561667465295gettyimages-521697453.jpeg?v=1561667497&w=1600&h=900',
+		},
+		{
+			name: 'Hercules',
+			url:
+				'https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/dog_cool_summer_slideshow/1800x1200_dog_cool_summer_other.jpg?resize=750px:*',
 		},
 	]);
 
