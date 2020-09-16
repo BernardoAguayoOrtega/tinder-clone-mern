@@ -1,29 +1,31 @@
 //import react and its hooks
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 //import TinderCard
 import TinderCard from 'react-tinder-card';
+//import base url
+import { baseURL, getCards } from '../../utils/requests';
 //import styles
 import './styles.css';
 
 //create cards component and export it
 export const Cards = () => {
-	const [people, setPeople] = useState([
-		{
-			name: 'Lucas',
-			url:
-				'https://image.cnbcfm.com/api/v1/image/105992231-1561667465295gettyimages-521697453.jpeg?v=1561667497&w=1600&h=900',
-		},
-		{
-			name: 'Hercules',
-			url:
-				'https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/other/dog_cool_summer_slideshow/1800x1200_dog_cool_summer_other.jpg?resize=750px:*',
-		},
-	]);
+	const [people, setPeople] = useState([]);
+
+	//use effect
+	useEffect(() => {
+		async function fetchData() {
+			const req = await fetch(`${baseURL}${getCards}`).then((res) =>
+				res.json(),
+			);
+			console.log(req);
+		}
+
+		fetchData();
+	}, []);
 
 	//swipe function
-	const swiped = (direction, nameToDelete) => {
+	const swiped = (nameToDelete) => {
 		console.log(`removing ${nameToDelete}`);
-		//setLastDirection(direction);
 	};
 
 	//out frame function
@@ -47,7 +49,7 @@ export const Cards = () => {
 							<div
 								className='card'
 								style={{
-									background: `url(${person.url}) no-repeat center center`,
+									background: `url(${person.imgUrl}) no-repeat center center`,
 								}}>
 								{/*Name*/}
 								<h3>{person.name}</h3>
