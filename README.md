@@ -32,3 +32,12 @@
 - header :heart_eyes:
 - logo :low_brightness:
 - app :iphone:
+
+### folder structure :building_construction:
+
+- frontend
+  - public
+  - src
+    - components
+    - utils
+- backend
