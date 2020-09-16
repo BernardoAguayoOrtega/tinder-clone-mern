@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 //import TinderCard
 import TinderCard from 'react-tinder-card';
+//import styles
+import './styles.css';
 
 //create cards component and export it
 export const Cards = () => {
@@ -44,7 +46,9 @@ export const Cards = () => {
 							{/*Background image*/}
 							<div
 								className='card'
-								style={{ backgroundImage: `url(${person.url})` }}>
+								style={{
+									background: `url(${person.url}) no-repeat center center`,
+								}}>
 								{/*Name*/}
 								<h3>{person.name}</h3>
 							</div>

@@ -1,0 +1,8 @@
+.card {
+	position: relative;
+	background-color: white;
+	width: 60rem;
+	padding: 2rem;
+	max-width: 85vw;
+	height: 50vh;
+}
