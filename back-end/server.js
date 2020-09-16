@@ -35,14 +35,15 @@ app.post('/tinder/card', (req, res) => {
 	});
 });
 
-app.get('/tinder/cards', (req, res) => {
-  Cards.find( (err, data) => {
+app.get('/tinder/card', (req, res) => {
+	Cards.find((err, data) => {
 		if (err) {
 			res.status(500).send(err);
 		} else {
 			res.status(200).send(data);
 		}
-})
+	});
+});
 
 //listener
 app.listen(port, () => console.log(`listening on localhost: ${port}`));
