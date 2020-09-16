@@ -1,9 +1,9 @@
 //import react and its hooks
 import React, { useState, useEffect } from 'react';
-//import TinderCard
+//import TinderCards
 import TinderCard from 'react-tinder-card';
 //import base url
-import { baseURL, getCards } from '../../utils/requests';
+import { instance, getCards } from '../../utils/requests';
 //import styles
 import './styles.css';
 
@@ -14,10 +14,9 @@ export const Cards = () => {
 	//use effect
 	useEffect(() => {
 		async function fetchData() {
-			const req = await fetch(`${baseURL}${getCards}`).then((res) =>
-				res.json(),
-			);
-			console.log(req);
+			const req = await instance
+				.get(getCards)
+				.then((res) => setPeople(res.data));
 		}
 
 		fetchData();
