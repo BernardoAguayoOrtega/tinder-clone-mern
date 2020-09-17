@@ -4,7 +4,7 @@
 
 ## Host
 
-1. The app is goint to be hosted at github pages :computer:
+1. The app is goint to be hosted at github pages [see](https://bernardoaguayoortega.github.io/tinder-clone-mern/):computer:
 2. The back is going to be hosted at heroku :back:
 
 ### Dependencies :eyes:
